@@ -32,5 +32,6 @@ async function getMessages() {
   });
   return data;
 }
-async function addMessage(msg) {}
 getMessages();
+const socket = io();
+socket.on("message", () => getMessages());
