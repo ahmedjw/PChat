@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
+      integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"
+      integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="bg-dark">
+    <div class="container">
+      <br />
+      <div class="jumbotron">
+        <h1 class="text-secondary"><span class="text-warning">P</span>Chat</h1>
+        <h1 class="display-4">Send Message</h1>
+        <br />
+        <input class="form-control" id="Name" placeholder="Name" />
+        <br />
+        <input class="form-control" id="Message" placeholder="Message" />
+        <br />
+        <button id="send" class="btn btn-success" onclick="addMessages()">
+          Send
+        </button>
+      </div>
+      <div id="messages"></div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
